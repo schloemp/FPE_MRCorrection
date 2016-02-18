@@ -7,7 +7,7 @@
     "targetFolder": "dist",
     "sourceFolder": "webapp",
     "buildRequired": false,
-    "lastBuildDateTime": "Thu, 18 Feb 2016 14:37:43 GMT"
+    "lastBuildDateTime": "Thu, 18 Feb 2016 14:41:32 GMT"
   },
   "generation": [
     {
@@ -26,6 +26,6 @@
   "hcpdeploy": {
     "account": "s0002895131trial",
     "name": "fpemrcorrection",
-    "lastVersionWeTriedToDeploy": "0.0.1"
+    "lastVersionWeTriedToDeploy": "0.0.2"
   }
 }
