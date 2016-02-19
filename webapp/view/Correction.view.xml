@@ -3,7 +3,7 @@
 		<pages>
 			<Page title="{i18n>title}">
 				<content>
-					<Button text="{i18n>nextButton}" press="onNext"/>
+					<Button press="onSubmit" text="{i18n>CorrectMR}"/>
 				</content>
 			</Page>
 		</pages>

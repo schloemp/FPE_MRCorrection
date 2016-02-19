@@ -4,7 +4,7 @@ sap.ui.define([
 	"use strict";
 
 	return Controller.extend("Test.controller.Correction", {
-		onNext: function() {
+		onSubmit: function() {
 		    var lPE = sap.ushell.Container.getService("ProcessEngine");
 		    lPE.executeNext();
 		}
