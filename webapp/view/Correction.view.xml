@@ -1,10 +1,29 @@
-<mvc:View controllerName="Test.controller.Correction" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" controllerName="Test.controller.Correction">
 	<App>
 		<pages>
-			<Page title="{i18n>title}">
+			<Page title="{i18n&gt;title}">
 				<content>
-					<Button press="onSubmit" text="{i18n>CorrectMR}"/>
+					<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="false" layout="ResponsiveGridLayout" id="__form0" labelMinWidth="220" maxContainerCols="2" columnsL="1" columnsM="2">
+					    <sap.ui.layout.form:content>
+					        <sap.ui.core:Title xmlns:sap.ui.core="sap.ui.core" text="Meter Reading Correction" id="__title0"/>
+					        <Label text="Customer" id="__label0"/>
+					        <Input width="100%" id="__input0" value="{data&gt;/CustomerName}" editable="false"/>
+					        <Label text="Meter Reading Order" id="__label1"/>
+					        <Input width="100%" id="__input2" value="{data&gt;/MROrderKey}" editable="false"/>
+					        <Input width="100%" id="__input1" value="{data&gt;/MROrderOldValue}" editable="false"/>
+					        <Input width="100%" id="__input3" value="{data&gt;/MROrderNewValue}"/></sap.ui.layout.form:content>
+					</sap.ui.layout.form:SimpleForm>
 				</content>
+			<footer>
+			    <Bar id="__bar0">
+			        <customData>
+			            <sap.ui.core:CustomData xmlns:sap.ui.core="sap.ui.core" key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data4"/>
+			        </customData>
+			    <contentRight>
+			        <Button press="onSubmit" text="{i18n&gt;CorrectMR}" activeIcon="sap-icon://upload"/>
+			    </contentRight>
+			    </Bar>
+			</footer>
 			</Page>
 		</pages>
 	</App>
