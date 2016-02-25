@@ -8,10 +8,18 @@
 					        <sap.ui.core:Title xmlns:sap.ui.core="sap.ui.core" text="Meter Reading Correction" id="__title0"/>
 					        <Label text="Customer" id="__label0"/>
 					        <Input width="100%" id="__input0" value="{data&gt;/CustomerName}" editable="false"/>
+					        <Label text="Premise"/>
+					        <Input width="100%" value="{data&gt;/Premise}" editable="false"/>
+					        <Label text="Installation"/>
+					        <Input width="100%" value="{data&gt;/Installation}" editable="false"/>
 					        <Label text="Meter Reading Order" id="__label1"/>
 					        <Input width="100%" id="__input2" value="{data&gt;/MROrderKey}" editable="false"/>
+					        <Label text="Current Value" width="100%" id="__label2"/>
 					        <Input width="100%" id="__input1" value="{data&gt;/MROrderOldValue}" editable="false"/>
-					        <Input width="100%" id="__input3" value="{data&gt;/MROrderNewValue}"/></sap.ui.layout.form:content>
+					        <DatePicker width="100%" id="__picker1" value="{date&gt;/MROrderOldDate}" editable="false"/>
+					        <Label text="New Value" width="100%" id="__label3"/>
+					        <Input width="100%" id="__input3" value="{data&gt;/MROrderNewValue}"/>
+					        <DatePicker width="100%" id="__picker0" value="{date&gt;/MROrderNewDate}"/></sap.ui.layout.form:content>
 					</sap.ui.layout.form:SimpleForm>
 				</content>
 			<footer>
