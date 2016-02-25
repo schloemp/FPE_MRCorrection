@@ -16,10 +16,10 @@
 					        <Input width="100%" id="__input2" value="{data&gt;/MROrderKey}" editable="false"/>
 					        <Label text="Current Value" width="100%" id="__label2"/>
 					        <Input width="100%" id="__input1" value="{data&gt;/MROrderOldValue}" editable="false"/>
-					        <DatePicker width="100%" id="__picker1" value="{date&gt;/MROrderOldDate}" editable="false"/>
+					        <DatePicker width="100%" id="__picker1" value="{date&gt;/MROrderOldDate}" editable="false" valueFormat="YYYY/MMDD"/>
 					        <Label text="New Value" width="100%" id="__label3"/>
 					        <Input width="100%" id="__input3" value="{data&gt;/MROrderNewValue}"/>
-					        <DatePicker width="100%" id="__picker0" value="{date&gt;/MROrderNewDate}"/></sap.ui.layout.form:content>
+					        <DatePicker width="100%" id="__picker0" value="{date&gt;/MROrderNewDate}" valueFormat="YYYY/MMDD"/></sap.ui.layout.form:content>
 					</sap.ui.layout.form:SimpleForm>
 				</content>
 			<footer>
