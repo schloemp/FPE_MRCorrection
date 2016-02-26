@@ -3,7 +3,7 @@
 		<pages>
 			<Page title="{i18n&gt;title}">
 				<content>
-					<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="false" layout="ResponsiveGridLayout" id="__form0" labelMinWidth="220" maxContainerCols="2" columnsL="1" columnsM="2">
+					<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" layout="ResponsiveGridLayout" id="__form0" labelMinWidth="220" maxContainerCols="2" columnsL="1" columnsM="2">
 					    <sap.ui.layout.form:content>
 					        <sap.ui.core:Title xmlns:sap.ui.core="sap.ui.core" text="Meter Reading Correction" id="__title0"/>
 					        <Label text="Customer" id="__label0"/>
