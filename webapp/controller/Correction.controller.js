@@ -1,7 +1,7 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"sap/ui/model/json/JSONModel"
-], function(Controller,JSONModel) {
+], function(Controller, JSONModel) {
 	"use strict";
 
 	return Controller.extend("Test.controller.Correction", {
@@ -10,15 +10,17 @@ sap.ui.define([
 			if (sap.ushell && sap.ushell.services.ProcessEngine) {
 				var lPE = sap.ushell.Container.getService("ProcessEngine");
 				this.PEStepContainer = lPE.getCurrentStepContainer();
-				this.PEStepContainer.MROrderOldValue = 10342;
-				this.PEStepContainer.MROrderNewValue = 10342;
-				var lModel = new JSONModel(this.PEStepContainer);
-				this.getView().setModel(lModel, "data");
+				if (this.PEStepContainer) {
+					this.PEStepContainer.MROrderOldValue = 10342;
+					this.PEStepContainer.MROrderNewValue = 10342;
+					var lModel = new JSONModel(this.PEStepContainer);
+					this.getView().setModel(lModel, "data");
+				}
 			}
 		},
 		onSubmit: function() {
-		    var lPE = sap.ushell.Container.getService("ProcessEngine");
-		    lPE.executeNext();
+			var lPE = sap.ushell.Container.getService("ProcessEngine");
+			lPE.executeNext();
 		}
 	});
 });
