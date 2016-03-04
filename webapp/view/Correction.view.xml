@@ -14,6 +14,10 @@
 					        <Input width="100%" value="{data&gt;/Premise}" editable="false"/>
 					        <Label text="Installation"/>
 					        <Input width="100%" value="{data&gt;/Installation}" editable="false"/>
+					        <Label text="Device"/>
+					        <Input width="100%" value="600000000000000159" editable="false"/>
+					        <Label text="Register"/>
+					        <Input width="100%" value="001" editable="false"/>	
 					        <Label text="Meter Reading Order" id="__label1"/>
 					        <Input width="100%" id="__input2" value="{data&gt;/MROrderKey}" editable="false"/>
 					        <Label text="Current Value" width="100%" id="__label2"/>
